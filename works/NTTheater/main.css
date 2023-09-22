@@ -1,0 +1,272 @@
+header{
+    background-image: url(Images/carbon.jpg);
+    background-size: 50px;
+    margin: 0px;
+    padding: 10px;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 5px;
+    position: relative;
+    display: flex;
+    border-bottom: 2px solid black;
+}
+
+#headerimg{
+    width: 100px;
+    position: absolute ;
+    right: 25px;
+    filter: grayscale(70%);
+}
+
+body{
+    background-color: #333;
+    color: aliceblue;
+    margin: 0px;
+    padding: 0px;
+}
+
+#upcomingMovies{
+    position: relative;
+    justify-content: center;
+    background-color: lightgrey;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px white;
+    margin: 10px;
+}
+
+#upcomingMovies img{
+    /* the 30% doesnt work on my page  for some reason*/
+    width: 25vw;
+}
+
+#upcomingMovies ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0px;
+}
+
+#upcomingMovies ul li{
+    margin: 3%;
+    position: relative;
+}
+
+#upcomingMovies h2{
+    background-color: white;
+    color: red;
+    width: 200px;
+    border-radius: 20px;
+    padding: 0px 4px 0px 4px;
+    margin: 0px;
+    text-align: center;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%); /*to make it absolutely center even if we shrink the page*/
+      /* comeback to this later*/ /* updated - done */
+} 
+
+#section2{
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(85, 85, 85);
+    justify-content: space-evenly;
+    padding: 20px;
+    overflow-y: hidden;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+#character{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    padding-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+ }
+
+ #character1, #character2{
+    position: relative;
+    text-align: center;
+    display: flex;
+ }
+ #character1 h3, #character2 h3{
+    margin-left: 25px;
+    position: relative;
+    top: 20px;
+    font-size: 25px;
+ }
+
+
+ #section2 p{
+    background-color: rgb(170, 170, 170);
+    color: black;
+    font-weight: bold;
+    width: 120px;
+    border-radius: 10px;
+    padding: 10px 30px 0px 30px;
+    margin: 0px;
+    text-align: center;
+    position: absolute;
+    top: -10px;
+} 
+
+/*
+
+#first1 h2{
+    position: absolute;
+    bottom: 0px;
+    right: 0%;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 0px;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 1s;
+    pointer-events: none;
+ }
+#second h2{
+    position: absolute;
+    bottom: 0px;
+    right: 0%;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 0px;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 1s;
+    pointer-events: none;
+ }
+
+ */
+
+ #first1 img, #second img{
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid black;
+ }
+
+ #first1 img:hover, #second img:hover{
+    width: 140px;
+    transition: 1s;
+
+ }
+
+ #first1 img:hover + h2, #second img:hover + h2{
+    width: 80%;
+    transition: 2s;
+
+ }
+
+ #first img{
+    width: 200px;
+    transition: 1s;
+ }
+ #first h2{
+    position: absolute;
+    bottom: 50px;
+    right: 0%;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 0px;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 1s;
+    pointer-events: none;
+ }
+
+ #first img:hover{
+    width: 250px;
+    transition: 1s;
+
+ }
+
+ #first img:hover + h2{
+    width: 80%;
+    transition: 2s;
+
+ }
+
+ .style{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateY(-40%) translateX(-50%);
+    background-color: white;
+    color: black;
+    padding: 3px;
+    border-radius: 3px;
+    border: 1px solid red;
+    visibility: hidden;
+    pointer-events: none;
+    
+ }
+
+ #trans1 img:hover{
+    opacity: 0.3;
+    transition: 1s;
+ }
+ #trans1 img:hover + p{
+    visibility: inherit;
+ }
+
+ #trans2 img:hover{
+    opacity: 0.3;
+    transition: 1s;
+ }
+ #trans2 img:hover + p{
+    visibility: inherit;
+ }
+
+ #trans3 img:hover{
+    opacity: 0.3;
+    transition: 1s;
+ }
+ #trans3 img:hover + p{
+    visibility: inherit;
+ }
+
+
+
+
+
+
+
+
+/*
+
+transform: translate(-45%, 0%);
+
+#upcomingMovies h2{
+    background-color: white;
+    color: red;
+    width: 200px;
+    position: absolute;
+    justify-content: center;
+    top: -35px;
+    left: 300px;
+}
+*/
+
+
+
+
+
+
+
+
